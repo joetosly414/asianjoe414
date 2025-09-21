@@ -3,3 +3,11 @@ _temp/
 lib/
 node_modules/
 .vscode/
+
+# Solidity build artifacts and dependencies
+out/
+cache/
+artifacts/
+.env
+.env.local
+broadcast/
