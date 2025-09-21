@@ -9,6 +9,8 @@
     "format-check": "prettier --check '**/*.ts'",
     "lint": "eslint src/**/*.ts",
     "test": "jest",
+    "test:hardhat": "npx hardhat test",
+    "compile": "npx hardhat compile",
     "licensed-check": "src/misc/licensed-check.sh",
     "licensed-generate": "src/misc/licensed-generate.sh"
   },
@@ -36,27 +38,25 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-ethers": "^4.0.1",
     "@types/jest": "^29.5.12",
     "@types/node": "^24.1.0",
     "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
     "@vercel/ncc": "^0.38.1",
+    "chai": "^6.0.1",
     "eslint": "^8.57.0",
     "eslint-plugin-github": "^4.10.2",
     "eslint-plugin-jest": "^28.8.2",
+    "ethers": "^6.15.0",
+    "hardhat": "^3.0.6",
     "jest": "^29.7.0",
     "jest-circus": "^29.7.0",
     "js-yaml": "^4.1.0",
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.5.4",
-    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
-    "@openzeppelin/hardhat-upgrades": "^2.4.3",
-    "hardhat": "^2.19.4"
-  },
-  "optionalDependencies": {
-    "@openzeppelin/contracts": "^5.0.1",
-    "@openzeppelin/contracts-upgradeable": "^5.0.1"
+    "typescript": "^5.5.4"
   }
 }
